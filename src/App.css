@@ -1,16 +1,86 @@
 /* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rye&family=VT323&display=swap');
+
+:root{
+    --cor-rosa: #C71585;
+    --cor-rosa-c: #FF69B4;
+    --cor-roxo: #4B0082;
+    --cor-roxo-c: #9932CC;
+    --cor-destaque: #00FFFF;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Rye", serif;
+    --fonte-segundaria: "VT323", monospace;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9dcea;
+    background-color: #f5d2e4a7;
+}
+
+body::-webkit-scrollbar {
+    width: 20px; 
+}
+   
+body::-webkit-scrollbar-track {
+    background: var(--cor-rosa); 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-rosa-c); 
+    border: 3px solid var(--cor-rosa-c); 
+    
 }
 
 header, footer {
+    background-color: var(--cor-rosa);
+    color: white;
     text-align: center;
     padding: 20px;
-    background-color: #C71585;
+    
+}
+
+header, footer > p {
+    font-size: 1.2em;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor-destaque);
+    font-size: 2.5em;
+}
+
+h2 {
+    color: var(--cor-roxo);
+
+}
+
+h3 {
+    background-color: var(--cor-roxo-c);
+    text-align: center;
+    font-size: 1.4em;
     color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.projects > ul {
+    background-color: #af84c4;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.291);
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+.projects > ul > li {  
+    font-size: 12pt;
+    margin: 20px;
 }
 
 section {
@@ -18,10 +88,10 @@ section {
     margin: 10px;
 }
 
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+.skills > ul >li {
+    list-style-type: '\2714\00A0\00A0';
 }
+
 @media (max-width: 768px) {
     body {
         font-size: 0.9em;
