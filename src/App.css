@@ -48,21 +48,43 @@ header, footer > p {
     font-size: 1.2em;
 }
 
-header > h1 {
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+h1 {
     font-family: var(--fonte-destaque);
     color: var(--cor-destaque);
     font-size: 2.5em;
 }
 
 h2 {
+    text-align: center;
     color: var(--cor-roxo);
+}
 
+.texto > p {
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+.img-pht {
+    width: 375px;
+    height: 450px;
+    object-fit: cover;
+    object-position: -40px 20px;
+}
+
+.skills > ul >li {
+    list-style-type: '\2714\00A0\00A0';
 }
 
 h3 {
     background-color: var(--cor-roxo-c);
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: white;
     padding: 10px;
     margin: -10px -10px 0px -10px;
@@ -74,22 +96,20 @@ h3 {
     padding: 10px;
     border-radius: 20px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.291);
-    list-style-type: '\2714\00A0\00A0';
+    list-style-type: circle;
     list-style-position: inside;
+    
 }
 
 .projects > ul > li {  
     font-size: 12pt;
     margin: 20px;
+    line-height: 1.5em;
 }
 
 section {
     padding: 20px;
     margin: 10px;
-}
-
-.skills > ul >li {
-    list-style-type: '\2714\00A0\00A0';
 }
 
 @media (max-width: 768px) {
