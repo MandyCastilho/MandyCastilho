@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5d2e4a7;
@@ -33,7 +33,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: var(--cor-rosa-c); 
     border: 3px solid var(--cor-rosa-c); 
-    
 }
 
 header, footer {
@@ -41,7 +40,6 @@ header, footer {
     color: white;
     text-align: center;
     padding: 20px;
-    
 }
 
 header, footer > p {
@@ -53,7 +51,6 @@ header, footer > p {
     justify-content: space-between;
 }
 
-
 h1 {
     font-family: var(--fonte-destaque);
     color: var(--cor-destaque);
@@ -61,24 +58,39 @@ h1 {
 }
 
 h2 {
-    text-align: center;
     color: var(--cor-roxo);
 }
 
+.texto > h2 {
+    text-align: center;
+}
+
 .texto > p {
+    margin: 5px 50px 5px 50px;
     text-indent: 30px;
     line-height: 1.5em;
+    display: inline-block;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.213);
 }
 
 .img-pht {
     width: 375px;
     height: 450px;
     object-fit: cover;
-    object-position: -40px 20px;
+    object-position: -40px 20px; 
 }
 
 .skills > ul >li {
     list-style-type: '\2714\00A0\00A0';
+    padding: 3px 0px;
+    font-style: italic;
+    font-weight: bold;
+    color: #250bbb;
+}
+
+.img-cod {
+    width: 300px;
+    float: right;
 }
 
 h3 {
@@ -98,13 +110,21 @@ h3 {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.291);
     list-style-type: circle;
     list-style-position: inside;
-    
 }
 
 .projects > ul > li {  
     font-size: 12pt;
     margin: 20px;
     line-height: 1.5em;
+    transition: transform 0.2s;
+    
+}
+
+.projects > ul > li:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    cursor: pointer;
+    color: var(--cor-destaque);
+    font-weight: bolder;
 }
 
 section {

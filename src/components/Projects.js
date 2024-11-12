@@ -10,9 +10,10 @@ function Projects() {
                 <li>Projeto Android - Site explicando a origem do Android</li>
                 <li>Projeto Cordel - Site com o poema do Cordel Moderno, focado mais no css</li>
                 <li>Projeto Tabela - Site representando diferentes jeitos de uma tabela</li>
-                <li>Projeto Celular - Site representando um celular com alguns aplicativos para acessar</li>
+                <li>Projeto App - Site representando um celular com alguns aplicativos para acessar</li>
                 <li>Projeto Login  - Uma página de login simples</li>
             </ul>
+
         </section>
     );
 }
