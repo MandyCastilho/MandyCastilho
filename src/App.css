@@ -65,6 +65,7 @@ h1 {
 
 h2 {
     color: var(--cor-roxo);
+    font-weight: 800;
 }
 
 .texto > h2 {
@@ -78,7 +79,7 @@ h2 {
     font-size: 1.1em;
     line-height: 1.5em;
     display: inline-block;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.213);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.284);
 }
 
 .img-pht {
@@ -116,9 +117,7 @@ h3 {
     background-color: #af84c4;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.291);
-    list-style-type: circle;
-    list-style-position: inside;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.291);  
 }
 
 .projects > ul > li {  
@@ -126,8 +125,9 @@ h3 {
     font-weight: bold;
     margin: 20px;
     line-height: 1.5em;
+    list-style-type: circle;
+    list-style-position: inside; 
     transition: transform 0.2s;
-    
 }
 
 .projects > ul > li:hover {
