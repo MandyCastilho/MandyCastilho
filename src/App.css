@@ -35,6 +35,11 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid var(--cor-rosa-c); 
 }
 
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
 header, footer {
     background-color: var(--cor-rosa);
     color: white;
@@ -46,7 +51,7 @@ header, footer > p {
     font-size: 1.2em;
 }
 
-.about {
+.about, .skills {
     display: flex;
     justify-content: space-between;
 }
@@ -55,6 +60,7 @@ h1 {
     font-family: var(--fonte-destaque);
     color: var(--cor-destaque);
     font-size: 2.5em;
+    text-shadow: 2px 2px 5px var(--cor-roxo);
 }
 
 h2 {
@@ -68,6 +74,8 @@ h2 {
 .texto > p {
     margin: 5px 50px 5px 50px;
     text-indent: 30px;
+    font-weight: 500;
+    font-size: 1.1em;
     line-height: 1.5em;
     display: inline-block;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.213);
@@ -80,16 +88,17 @@ h2 {
     object-position: -40px 20px; 
 }
 
-.skills > ul >li {
+.skills-ul >li {
     list-style-type: '\2714\00A0\00A0';
     padding: 3px 0px;
+    font-size: 1.3em;
     font-style: italic;
     font-weight: bold;
     color: #250bbb;
 }
 
 .img-cod {
-    width: 300px;
+    width: 400px; 
     float: right;
 }
 
@@ -114,6 +123,7 @@ h3 {
 
 .projects > ul > li {  
     font-size: 12pt;
+    font-weight: bold;
     margin: 20px;
     line-height: 1.5em;
     transition: transform 0.2s;
@@ -127,9 +137,14 @@ h3 {
     font-weight: bolder;
 }
 
-section {
-    padding: 20px;
-    margin: 10px;
+.contact > p {
+    font-size: 1.2em;
+    color: #250bbb;
+    font-weight: bolder;
+}
+
+footer > p {
+    text-shadow: 2px 2px 5px var(--cor-roxo);
 }
 
 @media (max-width: 768px) {
