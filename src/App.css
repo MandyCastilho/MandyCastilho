@@ -14,6 +14,10 @@
     --fonte-destaque: "Rye", serif;
     --fonte-segundaria: "VT323", monospace;
 }
+html{
+    width: 100%;
+    height: 100%;
+}
 
 body {
     font-family: Arial, Verdana, Helvetica, sans-serif;
@@ -73,21 +77,32 @@ h2 {
     text-align: center;
 }
 
-.texto > p {
+.texto {
+    background-color: #9932cc50;
     margin: 5px 50px 5px 50px;
+    text-align: justify;
     text-indent: 30px;
-    font-weight: 500;
-    font-size: 1.1em;
+    font-weight: 600; 
+    font-size: 1.1em; 
     line-height: 1.5em;
-    display: inline-block;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.284);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.texto:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
 }
 
 .img-pht {
     width: 375px;
-    height: 450px;
+    height: 540px;
     object-fit: cover;
     object-position: -40px 20px; 
+    margin-top: -13px;
 }
 
 .skills-ul >li {
@@ -97,11 +112,21 @@ h2 {
     font-style: italic;
     font-weight: bold;
     color: #250bbb;
+    transition: color 0.3s ease;
+
+    border-left: 5px solid var(--cor-rosa-c); 
+    padding: 6px 8px;
+    background-color: #9932cc28;
+    border-radius: 3px;
 }
 
+.skills-ul >li:hover{
+    color: var(--cor-rosa-c);
+
+}
 .img-cod {
-    width: 400px; 
-    float: right;
+    width: 500px; 
+    margin-right: 150px;
 }
 
 h3 {
@@ -139,9 +164,27 @@ h3 {
 }
 
 .contact > p {
+    background-color: var(--cor-rosa-c);
+    color: rgb(1, 1, 117);
     font-size: 1.2em;
-    color: #250bbb;
     font-weight: bolder;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 18px; 
+    transition: background-color 0.3s; 
+}
+
+.contact > p:hover{
+    background-color: var(--cor-destaque);
+    color: rgb(188, 8, 98);
+    cursor: pointer;
+}
+
+.figura{
+    margin-top: -600px;
 }
 
 footer > p {
