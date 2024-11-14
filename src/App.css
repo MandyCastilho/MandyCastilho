@@ -45,6 +45,7 @@ header, footer {
     color: white;
     text-align: center;
     padding: 20px;
+    background: linear-gradient(to bottom, var(--cor-rosa), var(--cor-roxo));
 }
 
 header, footer > p {
@@ -145,6 +146,7 @@ h3 {
 
 footer > p {
     text-shadow: 2px 2px 5px var(--cor-roxo);
+    
 }
 
 @media (max-width: 768px) {
