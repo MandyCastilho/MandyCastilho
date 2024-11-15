@@ -169,12 +169,12 @@ h3 {
     color: rgb(1, 1, 117);
     font-size: 18px; 
     font-weight: bolder;
-    padding: 10px 20px; 
-    border-radius: 5px;  
+    border-radius: 15px;  
     display: flex;
     position: center;
     margin: 10px auto;
-    transition: background-color 0.3s; 
+    padding: 2px 5px; 
+    transition: background-color 0.6s; 
 }
 
 .contact:hover{
@@ -193,6 +193,7 @@ h3 {
 
 .icones{
     padding-right: 30px;
+    transform: scale(.8);
 }
 
 .figura{

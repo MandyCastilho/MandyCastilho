@@ -54,7 +54,7 @@ function Contact() {
                     </div>
 
                     <div>
-                        <p>WhatsApp: <a href="https://wa.me/5511985026264" target='blank' className="contact-p">Envie uma mensagem no WhatsApp</a></p>
+                        <p>WhatsApp: <a href="https://wa.me/5511985026264" target='blank' className="contact-p">Envie-me uma mensagem no WhatsApp</a></p>
                     </div>
 
                 </div>
