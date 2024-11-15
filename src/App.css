@@ -164,33 +164,35 @@ h3 {
     font-weight: bolder;
 }
 
-.contact > p {
+.contact{
     background-color: var(--cor-rosa-c);
     color: rgb(1, 1, 117);
-    font-size: 1.2em;
+    font-size: 18px; 
     font-weight: bolder;
     padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    text-align: center; 
-    text-decoration: none; 
-    font-size: 18px; 
+    border-radius: 5px;  
+    display: flex;
+    position: center;
+    margin: 10px auto;
     transition: background-color 0.3s; 
 }
 
-.contact > p:hover{
+.contact:hover{
     background-color: var(--cor-destaque);
     color: rgb(188, 8, 98);
-    cursor: pointer;
 }
 
-.contact > p >a{
-    color: rgb(1, 1, 117);
+.contact-p {
     text-decoration: none;
+    color: rgb(1, 1, 117);
 }
 
-.contact > p >a:hover{
+.contact-p:hover{
     color: rgb(188, 8, 98);
+}
+
+.icones{
+    padding-right: 30px;
 }
 
 .figura{
@@ -200,7 +202,6 @@ h3 {
 footer > p {
     text-shadow: 2px 2px 5px var(--cor-roxo);
 }
-
 
 @media (max-width: 768px) {
     body {
