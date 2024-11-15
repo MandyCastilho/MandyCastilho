@@ -107,13 +107,14 @@ h2 {
 
 .skills-ul >li {
     list-style-type: '\2714\00A0\00A0';
+    height: 48px;
+    width: 400px;
     padding: 3px 0px;
     font-size: 1.3em;
     font-style: italic;
     font-weight: bold;
     color: #250bbb;
     transition: color 0.3s ease;
-
     border-left: 5px solid var(--cor-rosa-c); 
     padding: 6px 8px;
     background-color: #9932cc28;
@@ -146,7 +147,7 @@ h3 {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.291);  
 }
 
-.projects > ul > li {  
+.projects > ul > li { 
     font-size: 12pt;
     font-weight: bold;
     margin: 20px;
@@ -183,14 +184,23 @@ h3 {
     cursor: pointer;
 }
 
+.contact > p >a{
+    color: rgb(1, 1, 117);
+    text-decoration: none;
+}
+
+.contact > p >a:hover{
+    color: rgb(188, 8, 98);
+}
+
 .figura{
     margin-top: -600px;
 }
 
 footer > p {
     text-shadow: 2px 2px 5px var(--cor-roxo);
-    
 }
+
 
 @media (max-width: 768px) {
     body {

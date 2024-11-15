@@ -5,6 +5,7 @@ function Contact() {
         <section className="contact">
             <h2>Contato:</h2>
             <p>Email: castilhoamandaramos@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/MandyCastilho" target='blank'>Amanda Castilho</a></p>
         </section>
     );
 }
