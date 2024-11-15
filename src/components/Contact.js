@@ -11,6 +11,7 @@ function Contact() {
             <h2>Contato:</h2>
             <div>
 
+            <a href="mailto:castilhoamandaramos@gmail.com" target='blank' className="contact-p">
                 <div className="contact">
 
                     <div>
@@ -18,23 +19,27 @@ function Contact() {
                     </div>
 
                     <div>
-                        <p>Email: <a href="mailto:castilhoamandaramos@gmail.com" target='blank' className="contact-p">castilhoamandaramos@gmail.com</a></p>
+                        <p>Email:castilhoamandaramos@gmail.com</p>
                     </div>
 
                 </div>
+            </a>
 
+            <a href="https://github.com/MandyCastilho" target='blank' className="contact-p">
                 <div className="contact">
-
+                    
                     <div>
                         <img src={githubicon} className='icones'></img>
                     </div>
 
                     <div>
-                        <p>GitHub: <a href="https://github.com/MandyCastilho" target='blank' className="contact-p">Amanda Castilho</a></p>
+                        <p>GitHub: Amanda Castilho</p>
                     </div>
 
                 </div>
+            </a>
 
+            <a href="https://www.linkedin.com/in/amanda-ramos-castilho-5ba928257/" target='blank' className="contact-p">
                 <div className="contact">
 
                     <div>
@@ -42,11 +47,13 @@ function Contact() {
                     </div>
 
                     <div>
-                        <p>LinkedIn: <a href="https://www.linkedin.com/in/amanda-ramos-castilho-5ba928257/" target='blank' className="contact-p">Amanda Ramos Castilho</a></p>
+                        <p>LinkedIn: Amanda Ramos Castilho</p>
                     </div>
 
                 </div>
+            </a>
 
+            <a href="https://wa.me/5511985026264" target='blank' className="contact-p">
                 <div className="contact">
 
                     <div>
@@ -54,10 +61,11 @@ function Contact() {
                     </div>
 
                     <div>
-                        <p>WhatsApp: <a href="https://wa.me/5511985026264" target='blank' className="contact-p">Envie-me uma mensagem no WhatsApp</a></p>
+                        <p>WhatsApp: Envie-me uma mensagem no WhatsApp</p>
                     </div>
 
                 </div>
+            </a>
 
             </div>
 
