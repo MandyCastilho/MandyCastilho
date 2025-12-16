@@ -2,7 +2,8 @@
 
 > 👋 **Bem-vindo(a) ao meu perfil!**
 >
-> 🎓 Estudante de **Análise e Desenvolvimento de Sistemas**, com foco em transformar ideias em soluções funcionais e de qualidade. Apaixonada por lógica de programação e por construir a web!
+> 🎓 Estudante de **Análise e Desenvolvimento de Sistemas**, com foco em transformar ideias em soluções funcionais e de qualidade.
+>  Apaixonada por lógica de programação e por construir a web!
 
 ---
 
@@ -79,11 +80,5 @@ Sinta-se à vontade para entrar em contato para discutir projetos, oportunidades
 * **💼 LinkedIn:** [Amanda Ramos Castilho](https://www.linkedin.com/in/amanda-ramos-castilho-5ba928257/)
 * **📧 E-mail:** castilhoamandaramos@gmail.com
 
----
 
-### ⚙️ Tecnologias Usadas para as Estatísticas
-
-| Estatísticas | Streak |
-| :--- | :--- |
-| ![GitHub Stats](https://github.com/anuraghazra/github-readme-stats) | ![GitHub Streak](https://github.com/DenverCoder1/github-streak-stats) |
 
