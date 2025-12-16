@@ -1,3 +1,4 @@
+## 👩‍💻 Amanda Ramos Castilho
 
 ### 📊 GitHub em números
 📈 Código, prática e consistência. Aqui estão alguns números da minha jornada como desenvolvedora.
@@ -19,6 +20,21 @@
 </a>
 
 </div>
+
+---
+
+### 🛠️ Stack principal
+HTML • CSS • JavaScript • Java • PHP • C# • React • Node.js
+
+---
+
+### 🔥 Consistência no código
+<div align="center">
+  <img 
+    src="https://streak-stats.demolab.com?user=MandyCastilho&theme=jolly" 
+  />
+</div>
+
 
 ---
 
