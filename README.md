@@ -1,7 +1,36 @@
 
+### 📊 GitHub em números
+📈 Código, prática e consistência. Aqui estão alguns números da minha jornada como desenvolvedora.
+
+<div align="center">
+
 <a href="#">
-  <img height=200 align="center" src="https://my-stats-43gk.vercel.app/api?username=MandyCastilho&show_icons=true&theme=jolly&hide=contribs,issues&show=discussions_answered&rank_icon=github&include_all_commits=true&card_width=150" />
+  <img 
+    height="180" 
+    src="https://my-stats-43gk.vercel.app/api?username=MandyCastilho&show_icons=true&theme=jolly&hide=issues,contribs&rank_icon=github&include_all_commits=true" 
+  />
 </a>
+
 <a href="#">
-  <img height=200 align="center" src="https://my-stats-43gk.vercel.app/api/top-langs/?username=MandyCastilho&hide=html,scss,css&langs_count=8&layout=compact&theme=jolly&card_width=150" />
+  <img 
+    height="180" 
+    src="https://my-stats-43gk.vercel.app/api/top-langs/?username=MandyCastilho&layout=compact&langs_count=6&theme=jolly" 
+  />
 </a>
+
+</div>
+
+---
+
+### 🛠️ Stack principal
+HTML • CSS • JavaScript • Java • PHP • C# • React • Node.js
+
+---
+
+### 🔥 Consistência no código
+<div align="center">
+  <img 
+    src="https://streak-stats.demolab.com?user=MandyCastilho&theme=jolly" 
+  />
+</div>
+
