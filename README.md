@@ -67,7 +67,7 @@
 
 ---
 
-### 📫 Vamos no[s conectar?
+### 📫 Vamos nos conectar?
 - 💼 LinkedIn: https://www.linkedin.com/in/amanda-ramos-castilho-5ba928257/  
 - 📧 E-mail: castilhoamandaramos@gmail.com
 
