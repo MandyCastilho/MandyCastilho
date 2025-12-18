@@ -1,14 +1,26 @@
 ## ✨ Amanda Ramos Castilho | Desenvolvedora Web em Formação
 
+
+
 > 👋 **Bem-vindo(a) ao meu perfil!**
+
 >
+
 > 🎓 Estudante de **Análise e Desenvolvimento de Sistemas**, com foco em transformar ideias em soluções funcionais e de qualidade.
+
 > 
+
 > ❤️ Apaixonada por lógica de programação e por construir a web!
+
+
 
 ---
 
+
+
 ### 💡 Sobre Mim
+
+
 
 * **Jornada:** Desenvolvedora em formação, sempre buscando escrever código **limpo, organizado e funcional**.
 
@@ -16,11 +28,18 @@
 
 * **Estudos Atuais:** Aprofundando meus conhecimentos em **Java, JavaScript, PHP, React, Node.js** e conceitos de backend, além de explorar a fundo a **Programação Orientada a Objetos (POO)**. Também estou estudando **COBOL** como diferencial.
 
+
+
 ---
+
+
 
 ### 🛠️ Minhas Habilidades (Tech Stack)
 
+
+
 #### 💻 Linguagens & Marcação
+
 
 
 | Categoria | Tecnologias |
@@ -34,14 +53,20 @@
 | **Outras** | `Python (Básico)` `COBOL` |
 
 
+
 #### 🚀 Frameworks & Bibliotecas
+
+
 
 * **Frontend:** React.js
 
 * **Backend:** Node.js
 
 
+
 #### 🗄️ Ferramentas & Práticas
+
+
 
 * **Versionamento:** Git & GitHub
 
@@ -49,13 +74,23 @@
 
 * **Conceitos:** Programação Orientada a Objetos (POO), Lógica de Programação, Desenvolvimento Web, Versionamento de Código.
 
+
+
 ---
+
+
 
 ### 📊 Meu Desempenho no GitHub
 
+
+
 Aqui estão alguns dados que refletem minha dedicação e consistência no código:
 
+
+
 <div align="center">
+
+
 
 <a href="https://github.com/MandyCastilho">
 
@@ -70,6 +105,8 @@ Aqui estão alguns dados que refletem minha dedicação e consistência no códi
   />
 
 </a>
+
+
 
 <a href="https://github.com/MandyCastilho">
 
@@ -86,14 +123,19 @@ Aqui estão alguns dados que refletem minha dedicação e consistência no códi
 </a>
 
 
+
 </div>
 
+
+
 #### 🔥 Consistência de Contribuições
+
+
 
 <div align="center">
 
   <img
-  
+
     src="https://streak-stats.demolab.com?user=MandyCastilho&theme=jolly"
 
     alt="Sequência de Contribuições"
@@ -102,9 +144,15 @@ Aqui estão alguns dados que refletem minha dedicação e consistência no códi
 
 </div>
 
+
+
 ---
 
+
+
 ### 📫 Vamos nos Conectar?
+
+
 
 Sinta-se à vontade para entrar em contato para discutir projetos, oportunidades ou apenas trocar ideias!
 
