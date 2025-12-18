@@ -1,66 +1,112 @@
-<div align="center">
-  <img height="150" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJndnZueXp3eHpxeHpxeHpxeHpxeHpxeHpxeHpxeHpxeHpxJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif"  />
-  <h1>Olá, eu sou a Amanda Ramos! 👋</h1>
-  <p><b>Desenvolvedora Web em Formação | Estudante de ADS</b></p>
+## ✨ Amanda Ramos Castilho | Desenvolvedora Web em Formação
 
-  <a href="https://www.linkedin.com/in/SEU_LINKEDIN">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:seuemail@exemplo.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</div>
+> 👋 **Bem-vindo(a) ao meu perfil!**
+>
+> 🎓 Estudante de **Análise e Desenvolvimento de Sistemas**, com foco em transformar ideias em soluções funcionais e de qualidade.
+> 
+> ❤️ Apaixonada por lógica de programação e por construir a web!
 
 ---
 
 ### 💡 Sobre Mim
 
-> 🎓 Estudante de **Análise e Desenvolvimento de Sistemas**, com foco em transformar ideias em soluções funcionais e de qualidade. Apaixonada por lógica e por construir a web!
+* **Jornada:** Desenvolvedora em formação, sempre buscando escrever código **limpo, organizado e funcional**.
 
-* 🌱 **Jornada:** Foco em código **limpo, organizado e funcional**.
-* 🔭 **Estudos atuais:** Aprofundando em **Java, JavaScript, PHP e Node.js**.
-* 📜 **Diferencial:** Explorando o mundo do **COBOL**.
-* 🧩 **Conceitos:** Domínio de **POO** e Lógica de Programação.
+* **Foco Principal:** Desenvolvimento **Web** (Frontend e Backend).
 
----
-
-### 🛠️ Tech Stack
-
-#### 💻 Linguagens & Web
-<p>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-</p>
-
-#### 🚀 Frameworks, Ferramentas & Outros
-<p>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-</p>
+* **Estudos Atuais:** Aprofundando meus conhecimentos em **Java, JavaScript, PHP, React, Node.js** e conceitos de backend, além de explorar a fundo a **Programação Orientada a Objetos (POO)**. Também estou estudando **COBOL** como diferencial.
 
 ---
 
-### 📊 Estatísticas
-<div align="center">
-  <img height="180" src="https://my-stats-43gk.vercel.app/api?username=MandyCastilho&show_icons=true&theme=jolly&hide=issues,contribs&rank_icon=github&include_all_commits=true" />
-  <img height="180" src="https://my-stats-43gk.vercel.app/api/top-langs/?username=MandyCastilho&layout=compact&langs_count=6&theme=jolly" />
-</div>
+### 🛠️ Minhas Habilidades (Tech Stack)
+
+#### 💻 Linguagens & Marcação
+
+
+| Categoria | Tecnologias |
+
+| :--- | :--- |
+
+| **Principais** | `Java` `JavaScript` `PHP` `C#` |
+
+| **Web** | `HTML5` `CSS3` |
+
+| **Outras** | `Python (Básico)` `COBOL` |
+
+
+#### 🚀 Frameworks & Bibliotecas
+
+* **Frontend:** React.js
+
+* **Backend:** Node.js
+
+
+#### 🗄️ Ferramentas & Práticas
+
+* **Versionamento:** Git & GitHub
+
+* **Editor:** VS Code
+
+* **Conceitos:** Programação Orientada a Objetos (POO), Lógica de Programação, Desenvolvimento Web, Versionamento de Código.
+
+---
+
+### 📊 Meu Desempenho no GitHub
+
+Aqui estão alguns dados que refletem minha dedicação e consistência no código:
 
 <div align="center">
-  <img width="100%" src="https://streak-stats.demolab.com?user=MandyCastilho&theme=jolly&mode=weekly" />
+
+<a href="https://github.com/MandyCastilho">
+
+  <img
+
+    height="180"
+
+    src="https://my-stats-43gk.vercel.app/api?username=MandyCastilho&show_icons=true&theme=jolly&hide=issues,contribs&rank_icon=github&include_all_commits=true"
+
+    alt="Estatísticas do GitHub"
+
+  />
+
+</a>
+
+<a href="https://github.com/MandyCastilho">
+
+  <img
+
+    height="180"
+
+    src="https://my-stats-43gk.vercel.app/api/top-langs/?username=MandyCastilho&layout=compact&langs_count=6&theme=jolly"
+
+    alt="Linguagens Mais Usadas"
+
+  />
+
+</a>
+
+
+</div>
+
+#### 🔥 Consistência de Contribuições
+
+<div align="center">
+
+  <img
+  
+    src="https://streak-stats.demolab.com?user=MandyCastilho&theme=jolly"
+
+    alt="Sequência de Contribuições"
+
+  />
+
 </div>
 
 ---
 
-<div align="center">
-  <sub>Apoiado por café e muitas linhas de código. ☕</sub>
-</div>
+### 📫 Vamos nos Conectar?
+
+Sinta-se à vontade para entrar em contato para discutir projetos, oportunidades ou apenas trocar ideias!
 
 * **💼 LinkedIn:** [Amanda Ramos Castilho](https://www.linkedin.com/in/amanda-ramos-castilho-5ba928257/)
 * **📧 E-mail:** castilhoamandaramos@gmail.com
