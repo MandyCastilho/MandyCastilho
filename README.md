@@ -1,10 +1,10 @@
-## ✨ Amanda Ramos Castilho | Desenvolvedora Web em Formação
+## ✨ Amanda Ramos Castilho | Desenvolvedora Web 
 
 ---
 
 > 👋 **Bem-vindo(a) ao meu perfil!**
 >
-> 🎓 Estudante de **Análise e Desenvolvimento de Sistemas**, com foco em transformar ideias em soluções funcionais e de qualidade.
+> 🎓 Formada em **Análise e Desenvolvimento de Sistemas**, com foco em transformar ideias em soluções funcionais e de qualidade.
 > 
 > ❤️ Apaixonada por lógica de programação e por construir a web!
 
