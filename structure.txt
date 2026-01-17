@@ -1,0 +1,12 @@
+meu-portfolio/
+│
+├── index.html
+├── style.css
+├── javascript.js
+└── assets/           <-- Crie esta pasta e coloque suas imagens aqui
+    ├── img1-pq.jpg
+    ├── img2-pq.jpg
+    ├── icon-email.png
+    ├── icon-github.png
+    ├── icon-linke.png
+    └── icon-wpp.png

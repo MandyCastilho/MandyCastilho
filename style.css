@@ -1,9 +1,8 @@
-/* App.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rye&family=VT323&display=swap');
 
-:root{
+/* Variáveis e Reset Geral */
+:root {
     --cor-rosa: #C71585;
     --cor-rosa-c: #FF69B4;
     --cor-roxo: #4B0082;
@@ -14,18 +13,28 @@
     --fonte-destaque: "Rye", serif;
     --fonte-segundaria: "VT323", monospace;
 }
-html{
+
+html {
     width: 100%;
     height: 100%;
 }
 
 body {
-    font-family: Arial, Verdana, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5d2e4a7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Scrollbar Customizada */
 body::-webkit-scrollbar {
     width: 20px; 
 }
@@ -39,6 +48,7 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid var(--cor-rosa-c); 
 }
 
+/* Layout Geral */
 section {
     padding: 20px;
     margin: 10px;
@@ -52,7 +62,7 @@ header, footer {
     background: linear-gradient(to bottom, var(--cor-rosa), var(--cor-roxo));
 }
 
-header, footer > p {
+header p, footer p {
     font-size: 1.2em;
 }
 
@@ -61,11 +71,13 @@ header, footer > p {
     justify-content: space-between;
 }
 
+/* Tipografia */
 h1 {
     font-family: var(--fonte-destaque);
     color: var(--cor-destaque);
     font-size: 2.5em;
     text-shadow: 2px 2px 5px var(--cor-roxo);
+    margin: 0.5em 0;
 }
 
 h2 {
@@ -77,6 +89,7 @@ h2 {
     text-align: center;
 }
 
+/* Estilo do bloco de texto "Sobre Mim" */
 .texto {
     background-color: #9932cc50;
     margin: 5px 50px 5px 50px;
@@ -97,16 +110,30 @@ h2 {
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
 }
 
+/* Imagens */
 .img-pht {
     width: 375px;
     height: 540px;
     object-fit: cover;
     object-position: -40px 20px; 
     margin-top: -13px;
+    max-width: 100%;
 }
 
-.skills-ul >li {
-    list-style-type: '\2714\00A0\00A0';
+.img-cod {
+    width: 500px; 
+    margin-right: 150px;
+    max-width: 100%;
+}
+
+/* Lista de Habilidades */
+.skills-ul {
+    list-style: none; /* Remove bullet padrão pois o CSS adiciona content */
+    padding-left: 0;
+}
+
+.skills-ul > li {
+    /* list-style-type: '\2714\00A0\00A0'; Removido para usar ::before se necessário, mas mantendo original funciona se não usar reset total */
     height: 48px;
     width: 400px;
     padding: 3px 0px;
@@ -119,17 +146,21 @@ h2 {
     padding: 6px 8px;
     background-color: #9932cc28;
     border-radius: 3px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
 }
 
-.skills-ul >li:hover{
+/* Simulando o list-style original do React que era inline */
+.skills-ul > li::before {
+    content: '\2714\00A0\00A0';
+}
+
+.skills-ul > li:hover{
     color: var(--cor-rosa-c);
-
-}
-.img-cod {
-    width: 500px; 
-    margin-right: 150px;
 }
 
+/* Projetos */
 h3 {
     background-color: var(--cor-roxo-c);
     text-align: center;
@@ -158,53 +189,79 @@ h3 {
 }
 
 .projects > ul > li:hover {
-    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    transform: scale(1.05);
     cursor: pointer;
     color: var(--cor-destaque);
     font-weight: bolder;
 }
 
-.contact{
+/* Contato */
+.contact {
     background-color: var(--cor-rosa-c);
     color: rgb(1, 1, 117);
     font-size: 18px; 
     font-weight: bolder;
     border-radius: 15px;  
     display: flex;
-    position: center;
+    align-items: center; /* Corrigido de position:center */
     margin: 10px auto;
-    padding: 2px 5px; 
+    padding: 10px 15px; 
     transition: background-color 0.6s; 
+    max-width: 600px; /* Limite para não esticar demais */
 }
 
-.contact:hover{
+.contact:hover {
     background-color: var(--cor-destaque);
     color: rgb(188, 8, 98);
 }
 
 .contact-p {
     text-decoration: none;
+    display: block; /* Garante que o link ocupe a linha */
 }
 
-.icones{
+.icones {
     padding-right: 30px;
     transform: scale(.8);
-}
-
-.figura{
-    margin-top: -600px;
+    display: block;
 }
 
 footer > p {
     text-shadow: 2px 2px 5px var(--cor-roxo);
 }
 
+/* Responsividade Básica */
 @media (max-width: 768px) {
     body {
         font-size: 0.9em;
     }
+    
     header, footer {
         padding: 15px;
     }
-}
 
+    .about, .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto {
+        margin: 20px 10px;
+    }
+
+    .img-pht, .img-cod {
+        margin: 0;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .skills-ul > li {
+        width: auto;
+    }
+    
+    .img-cod {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}
