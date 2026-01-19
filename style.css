@@ -1,268 +1,266 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rye&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rye&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=VT323&display=swap');
 
-/* Variáveis e Reset Geral */
+/* ==========================
+   VARIÁVEIS GLOBAIS
+========================== */
 :root {
-    --cor-rosa: #C71585;
-    --cor-rosa-c: #FF69B4;
-    --cor-roxo: #4B0082;
-    --cor-roxo-c: #9932CC;
-    --cor-destaque: #00FFFF;
+    --rosa: #C71585;
+    --rosa-claro: #FF69B4;
+    --roxo: #4B0082;
+    --roxo-claro: #9932CC;
+    --ciano: #00FFFF;
 
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: "Rye", serif;
-    --fonte-segundaria: "VT323", monospace;
+    --bg-geral: #f5d2e4a7;
+    --bg-card: rgba(153, 50, 204, 0.25);
+
+    --fonte-base: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --fonte-destaque: 'Rye', serif;
+    --fonte-mono: 'VT323', monospace;
+
+    --radius: 16px;
+    --shadow-soft: 0 8px 18px rgba(0, 0, 0, 0.18);
+    --shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.28);
 }
 
-html {
+/* ==========================
+   RESET BÁSICO
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f5d2e4a7;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-geral);
+    font-family: var(--fonte-base);
+    line-height: 1.6;
+    color: #2c003e;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-/* Scrollbar Customizada */
+/* ==========================
+   SCROLLBAR
+========================== */
 body::-webkit-scrollbar {
-    width: 20px; 
+    width: 14px;
 }
-   
+
 body::-webkit-scrollbar-track {
-    background: var(--cor-rosa); 
+    background: var(--rosa);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--cor-rosa-c); 
-    border: 3px solid var(--cor-rosa-c); 
+    background: var(--rosa-claro);
+    border-radius: 10px;
 }
 
-/* Layout Geral */
-section {
-    padding: 20px;
-    margin: 10px;
-}
-
-header, footer {
-    background-color: var(--cor-rosa);
-    color: white;
+/* ==========================
+   HEADER & FOOTER
+========================== */
+header,
+footer {
+    background: linear-gradient(to bottom, var(--rosa), var(--roxo));
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    background: linear-gradient(to bottom, var(--cor-rosa), var(--cor-roxo));
+    padding: 25px 15px;
 }
 
-header p, footer p {
-    font-size: 1.2em;
+header p,
+footer p {
+    font-size: 1.1rem;
 }
 
-.about, .skills {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Tipografia */
+/* ==========================
+   TIPOGRAFIA
+========================== */
 h1 {
     font-family: var(--fonte-destaque);
-    color: var(--cor-destaque);
-    font-size: 2.5em;
-    text-shadow: 2px 2px 5px var(--cor-roxo);
-    margin: 0.5em 0;
+    font-size: 2.6rem;
+    color: var(--ciano);
+    text-shadow: 2px 2px 6px var(--roxo);
+    margin-bottom: 10px;
 }
 
 h2 {
-    color: var(--cor-roxo);
-    font-weight: 800;
+    font-size: 2rem;
+    color: var(--roxo);
+    margin-bottom: 15px;
 }
 
-.texto > h2 {
+h3 {
+    background: var(--roxo-claro);
+    color: #fff;
     text-align: center;
+    padding: 12px;
+    border-radius: var(--radius) var(--radius) 0 0;
 }
 
-/* Estilo do bloco de texto "Sobre Mim" */
+/* ==========================
+   SEÇÕES
+========================== */
+section {
+    padding: 30px 20px;
+}
+
+/* ==========================
+   SOBRE & SKILLS
+========================== */
+.about,
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
 .texto {
-    background-color: #9932cc50;
-    margin: 5px 50px 5px 50px;
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: var(--radius);
     text-align: justify;
-    text-indent: 30px;
-    font-weight: 600; 
-    font-size: 1.1em; 
-    line-height: 1.5em;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1.05rem;
+    font-weight: 500;
+    box-shadow: var(--shadow-soft);
+    transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .texto:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
 }
 
-/* Imagens */
+/* ==========================
+   IMAGENS
+========================== */
 .img-pht {
-    width: 375px;
-    height: 540px;
-    object-fit: cover;
-    object-position: -40px 20px; 
-    margin-top: -13px;
+    width: 360px;
     max-width: 100%;
+    border-radius: var(--radius);
+    object-fit: cover;
 }
 
 .img-cod {
-    width: 500px; 
-    margin-right: 150px;
+    width: 480px;
     max-width: 100%;
 }
 
-/* Lista de Habilidades */
+/* ==========================
+   SKILLS
+========================== */
 .skills-ul {
-    list-style: none; /* Remove bullet padrão pois o CSS adiciona content */
-    padding-left: 0;
+    list-style: none;
+    padding: 0;
 }
 
-.skills-ul > li {
-    /* list-style-type: '\2714\00A0\00A0'; Removido para usar ::before se necessário, mas mantendo original funciona se não usar reset total */
-    height: 48px;
-    width: 400px;
-    padding: 3px 0px;
-    font-size: 1.3em;
-    font-style: italic;
+.skills-ul li {
+    background: var(--bg-card);
+    border-left: 6px solid var(--rosa-claro);
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
     font-weight: bold;
+    font-style: italic;
     color: #250bbb;
-    transition: color 0.3s ease;
-    border-left: 5px solid var(--cor-rosa-c); 
-    padding: 6px 8px;
-    background-color: #9932cc28;
-    border-radius: 3px;
-    margin-bottom: 5px;
     display: flex;
     align-items: center;
+    gap: 8px;
+    transition: all .25s ease;
 }
 
-/* Simulando o list-style original do React que era inline */
-.skills-ul > li::before {
-    content: '\2714\00A0\00A0';
+.skills-ul li::before {
+    content: "✔";
+    color: var(--rosa);
 }
 
-.skills-ul > li:hover{
-    color: var(--cor-rosa-c);
+.skills-ul li:hover {
+    background: rgba(255, 105, 180, 0.25);
+    transform: translateX(6px);
 }
 
-/* Projetos */
-h3 {
-    background-color: var(--cor-roxo-c);
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
-    padding: 10px;
-    margin: -10px -10px 0px -10px;
-    border-radius: 20px 20px 0px 0px;
+/* ==========================
+   PROJETOS
+========================== */
+.projects-card {
+    max-width: 500px;
+    margin: auto;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
 }
 
-.projects > ul {
-    background-color: #af84c4;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.291);  
+.projects-card ul {
+    background: #af84c4;
+    padding: 20px;
 }
 
-.projects > ul > li { 
-    font-size: 12pt;
+.projects-card li {
+    margin: 12px 0;
     font-weight: bold;
-    margin: 20px;
-    line-height: 1.5em;
-    list-style-type: circle;
-    list-style-position: inside; 
-    transition: transform 0.2s;
+    transition: color .2s ease, transform .2s ease;
 }
 
-.projects > ul > li:hover {
+.projects-card li:hover {
+    color: var(--ciano);
     transform: scale(1.05);
     cursor: pointer;
-    color: var(--cor-destaque);
-    font-weight: bolder;
 }
 
-/* Contato */
+/* ==========================
+   CONTATO
+========================== */
 .contact {
-    background-color: var(--cor-rosa-c);
-    color: rgb(1, 1, 117);
-    font-size: 18px; 
-    font-weight: bolder;
-    border-radius: 15px;  
+    background: var(--rosa-claro);
+    color: #010175;
+    border-radius: var(--radius);
+    padding: 12px 18px;
     display: flex;
-    align-items: center; /* Corrigido de position:center */
-    margin: 10px auto;
-    padding: 10px 15px; 
-    transition: background-color 0.6s; 
-    max-width: 600px; /* Limite para não esticar demais */
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 12px auto;
+    font-weight: bold;
+    transition: all .3s ease;
+    text-decoration: none;
 }
 
 .contact:hover {
-    background-color: var(--cor-destaque);
-    color: rgb(188, 8, 98);
-}
-
-.contact-p {
-    text-decoration: none;
-    display: block; /* Garante que o link ocupe a linha */
+    background: var(--ciano);
+    color: var(--rosa);
 }
 
 .icones {
-    padding-right: 30px;
-    transform: scale(.8);
-    display: block;
+    width: 32px;
+    height: 32px;
 }
 
-
-footer > p {
-    text-shadow: 2px 2px 5px var(--cor-roxo);
+/* ==========================
+   FOOTER
+========================== */
+footer p {
+    text-shadow: 2px 2px 5px var(--roxo);
 }
 
-/* Responsividade Básica */
+/* ==========================
+   RESPONSIVO
+========================== */
 @media (max-width: 768px) {
-    body {
-        font-size: 0.9em;
-    }
-    
-    header, footer {
-        padding: 15px;
+    .about,
+    .skills {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .about, .skills {
-        flex-direction: column;
-        align-items: center;
+    h1 {
+        font-size: 2.1rem;
     }
 
     .texto {
-        margin: 20px 10px;
-    }
-
-    .img-pht, .img-cod {
-        margin: 0;
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-    }
-
-    .skills-ul > li {
-        width: auto;
-    }
-    
-    .img-cod {
-        margin-right: 0;
-        margin-top: 20px;
+        margin: 10px 0;
     }
 }
