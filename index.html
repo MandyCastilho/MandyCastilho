@@ -17,99 +17,98 @@
 
 <body>
 
-<header class="header">
-    <h1>Amanda Ramos Castilho</h1>
-    <p>Desenvolvedora Front-end | HTML • CSS • JavaScript • React</p>
-</header>
+    <header class="header">
+        <h1>Amanda Ramos Castilho</h1>
+        <p>Desenvolvedora Front-end | HTML • CSS • JavaScript • React</p>
+        <nav>
+            <a href="#about">Sobre</a> | 
+            <a href="#skills">Habilidades</a> | 
+            <a href="#projects">Projetos</a> | 
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about" class="about">
+            <img class="img-pht" src="assets/img1-pq.jpg" alt="Foto de perfil de Amanda Ramos Castilho">
+            <div class="texto">
+                <h2>Sobre Mim</h2>
+                <p>
+                Sou formada em Análise e Desenvolvimento de Sistemas pela FAM e tenho paixão por tecnologia e
+                design de interfaces. Atuo no desenvolvimento de software, criando soluções funcionais, modernas
+                e bem estruturadas, sempre com atenção à experiência do usuário, performance e qualidade do
+                código. 
+                </p>
 
-<main>
-
-    <section class="about">
-        <img class="img-pht" src="assets/img1-pq.jpg" alt="Foto de Amanda Ramos Castilho">
-
-        <div class="texto">
-            <h2>Sobre Mim</h2>
-            <p>
-                Sou desenvolvedora de software formada em Análise e Desenvolvimento de Sistemas, com foco na criação de soluções funcionais, intuitivas e bem estruturadas.
-            </p>
-            <p>
-                Possuo conhecimento em HTML, CSS, JavaScript, Java, PHP, C#, Python, COBOL e Node.js, atuando tanto no desenvolvimento front-end quanto no back-end, com boa base em lógica de programação, APIs e integração de sistemas. Também tenho experiência com frameworks modernos, como React, sempre prezando por boas práticas e código limpo.
-            </p>
-            <p>
-                Estou em constante evolução profissional, gosto de desafios e busco oportunidades onde eu possa aplicar meus conhecimentos, colaborar em projetos reais e continuar crescendo na área de tecnologia.
-            </p>
-        </div>
-    </section>
-
-    <section class="skills">
-        <div>
-            <h2>Habilidades</h2>
-            <ul class="skills-ul">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>PHP</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>COBOL</li>
-                <li>MySQL</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-            </ul>
-        </div>
-
-        <img class="img-cod" src="assets/img2-pq.jpg" alt="Código HTML e CSS">
-    </section>
-
-    <section class="projects">
-        <h2>Projetos</h2>
-
-        <div class="projects-card">
-            <h3>Web Pages</h3>
-            <ul>
-                <li>Agência Fake</li>
-                <li>Origem do Android</li>
-                <li>Cordel Moderno (CSS)</li>
-                <li>Tabelas em HTML</li>
-                <li>App Web (Simulação)</li>
-                <li>Página de Login</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="contact-section">
-        <h2>Contato</h2>
-
-        <address>
-            <a href="mailto:castilhoamandaramos@gmail.com" class="contact">
-                <img src="assets/icon-email.png" alt="">
-                <span>Email</span>
-            </a>
-
-            <a href="https://github.com/MandyCastilho" target="_blank" class="contact">
-                <img src="assets/icon-github.png" alt="">
-                <span>GitHub</span>
-            </a>
-
-            <a href="https://www.linkedin.com/in/amanda-ramos-castilho-5ba928257/" target="_blank" class="contact">
-                <img src="assets/icon-linke.png" alt="">
-                <span>LinkedIn</span>
-            </a>
-
-            <a href="https://wa.me/5511985026264" target="_blank" class="contact">
-                <img src="assets/icon-wpp.png" alt="">
-                <span>WhatsApp</span>
-            </a>
-        </address>
-    </section>
-
-</main>
-
-<footer class="footer">
-    <p>© <span id="year"></span> Amanda Ramos Castilho</p>
-</footer>
-
-<script src="javascript.js"></script>
-</body>
-</html>
+                <p>
+                Atualmente, aprimoro meus conhecimentos em HTML5, CSS3, JavaScript, Java, PHP, C#, Python e 
+                COBOL, explorando novas tecnologias, boas práticas e tendências do desenvolvimento. Acredito 
+                que código limpo, organização e um design bem planejado são pilares para aplicações eficientes
+                e escaláveis
+                </p>
+            </div>
+        </section>
+    
+        <section id="skills" class="skills">
+            <div class="skills-content">
+                <h2>Habilidades</h2>
+                <ul class="skills-ul">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>COBOL</li>
+                    <li>MySQL</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            <img class="img-cod" src="assets/img2-pq.jpg" alt="Representação de código de programação">
+        </section>
+    
+        <section id="projects" class="projects">
+            <h2>Projetos</h2>
+            <div class="projects-card">
+                <h3>Web Pages</h3>
+                <ul>
+                    <li>Agência Fake</li>
+                    <li>Origem do Android</li>
+                    <li>Cordel Moderno (CSS)</li>
+                    <li>Página de Login</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section id="contact" class="contact-section">
+            <h2>Contato</h2>
+            <address>
+                <a href="mailto:castilhoamandaramos@gmail.com" class="contact">
+                    <img src="assets/icon-email.png" alt="Ícone de Email" class="icones">
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/MandyCastilho" target="_blank" class="contact">
+                    <img src="assets/icon-github.png" alt="Ícone do GitHub" class="icones">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/amanda-ramos-castilho-5ba928257/" target="_blank" class="contact">
+                    <img src="assets/icon-linke.png" alt="Ícone do LinkedIn" class="icones">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://wa.me/5511985026264" target="_blank" class="contact">
+                    <img src="assets/icon-wpp.png" alt="Ícone do WhatsApp">
+                    <span>WhatsApp</span>
+                </a>
+            </address>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>© <span id="year"></span> Amanda Ramos Castilho</p>
+    </footer>
+    
+    <script src="javascript.js"></script>
+    </body>
+    </html>
