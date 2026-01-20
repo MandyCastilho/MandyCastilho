@@ -76,6 +76,42 @@ footer p {
     font-size: 1.1rem;
 }
 
+.nav {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    color: #4e0009; /* ou a cor base do seu site */
+    transition: color 0.3s ease;
+}
+
+/* Linha animada no hover */
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #9b1745, #750c27);
+    transition: width 0.3s ease;
+}
+
+.nav a:hover {
+    color: #9b1745;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
 /* ==========================
    TIPOGRAFIA
 ========================== */
