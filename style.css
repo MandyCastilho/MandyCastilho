@@ -8,22 +8,27 @@
     --rosa-claro: #FF69B4;
     --roxo: #4B0082;
     --roxo-claro: #9932CC;
-    --ciano: #00FFFF;
+    --ciano: #00E5FF;
 
-    --bg-geral: #f5d2e4a7;
-    --bg-card: rgba(153, 50, 204, 0.25);
+    --bg-geral: linear-gradient(180deg, #f7e4f1, #ead3f3);
+    --bg-card: rgba(255, 255, 255, 0.35);
+
+    --texto-principal: #2c003e;
+    --texto-secundario: #4a215e;
 
     --fonte-base: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     --fonte-destaque: 'Rye', serif;
     --fonte-mono: 'VT323', monospace;
 
-    --radius: 16px;
-    --shadow-soft: 0 8px 18px rgba(0, 0, 0, 0.18);
-    --shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.28);
+    --radius: 18px;
+    --blur: blur(14px);
+
+    --shadow-soft: 0 6px 20px rgba(0, 0, 0, 0.15);
+    --shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.25);
 }
 
 /* ==========================
-   RESET BÁSICO
+   RESET
 ========================== */
 * {
     margin: 0;
@@ -38,25 +43,21 @@ html, body {
 }
 
 body {
-    background-color: var(--bg-geral);
+    background: var(--bg-geral);
     font-family: var(--fonte-base);
-    line-height: 1.6;
-    color: #2c003e;
+    line-height: 1.7;
+    color: var(--texto-principal);
 }
 
 /* ==========================
    SCROLLBAR
 ========================== */
 body::-webkit-scrollbar {
-    width: 14px;
-}
-
-body::-webkit-scrollbar-track {
-    background: var(--rosa);
+    width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background: var(--rosa-claro);
+    background: linear-gradient(var(--rosa), var(--roxo));
     border-radius: 10px;
 }
 
@@ -65,17 +66,21 @@ body::-webkit-scrollbar-thumb {
 ========================== */
 header,
 footer {
-    background: linear-gradient(to bottom, var(--rosa), var(--roxo));
+    background: linear-gradient(135deg, var(--rosa), var(--roxo));
     color: #fff;
     text-align: center;
-    padding: 25px 15px;
+    padding: 32px 20px;
 }
 
 header p,
 footer p {
-    font-size: 1.1rem;
+    opacity: 0.9;
+    font-size: 1.05rem;
 }
 
+/* ==========================
+   NAV
+========================== */
 .nav {
     margin-top: 1.5rem;
     display: flex;
@@ -87,12 +92,12 @@ footer p {
 .nav a {
     position: relative;
     text-decoration: none;
-    font-weight: 500;
-    color: #4e0009; /* ou a cor base do seu site */
-    transition: color 0.3s ease;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
 }
 
-/* Linha animada no hover */
 .nav a::after {
     content: "";
     position: absolute;
@@ -100,12 +105,12 @@ footer p {
     bottom: -6px;
     width: 0%;
     height: 2px;
-    background: linear-gradient(90deg, #9b1745, #750c27);
+    background: var(--ciano);
     transition: width 0.3s ease;
 }
 
 .nav a:hover {
-    color: #9b1745;
+    opacity: 1;
 }
 
 .nav a:hover::after {
@@ -117,53 +122,55 @@ footer p {
 ========================== */
 h1 {
     font-family: var(--fonte-destaque);
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     color: var(--ciano);
-    text-shadow: 2px 2px 6px var(--roxo);
-    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.35);
 }
 
 h2 {
     font-size: 2rem;
     color: var(--roxo);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 h3 {
-    background: var(--roxo-claro);
+    background: linear-gradient(90deg, var(--roxo), var(--roxo-claro));
     color: #fff;
     text-align: center;
-    padding: 12px;
+    padding: 14px;
     border-radius: var(--radius) var(--radius) 0 0;
+    letter-spacing: 1px;
 }
 
 /* ==========================
    SEÇÕES
 ========================== */
 section {
-    padding: 30px 20px;
+    padding: 50px 20px;
 }
 
 /* ==========================
-   SOBRE & SKILLS
+   CARDS (SOBRE / SKILLS)
 ========================== */
+
 .about,
 .skills {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
+    flex-wrap: wrap;
 }
 
 .texto {
     background: var(--bg-card);
-    padding: 25px;
+    backdrop-filter: var(--blur);
+    padding: 30px;
     border-radius: var(--radius);
-    text-align: justify;
     font-size: 1.05rem;
-    font-weight: 500;
+    color: var(--texto-secundario);
     box-shadow: var(--shadow-soft);
-    transition: transform .3s ease, box-shadow .3s ease;
+    transition: transform .35s ease, box-shadow .35s ease;
 }
 
 .texto:hover {
@@ -172,13 +179,13 @@ section {
 }
 
 /* ==========================
-   IMAGENS
+   IMAGEM
 ========================== */
 .img-pht {
-    width: 360px;
+    width: 340px;
     max-width: 100%;
     border-radius: var(--radius);
-    object-fit: cover;
+    box-shadow: var(--shadow-soft);
 }
 
 /* ==========================
@@ -186,31 +193,28 @@ section {
 ========================== */
 .skills-ul {
     list-style: none;
-    padding: 0;
 }
 
 .skills-ul li {
-    background: var(--bg-card);
-    border-left: 6px solid var(--rosa-claro);
-    padding: 10px 14px;
-    margin-bottom: 8px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-style: italic;
-    color: #250bbb;
+    background: rgba(255, 255, 255, 0.45);
+    border-left: 5px solid var(--rosa);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--texto-principal);
     display: flex;
     align-items: center;
-    gap: 8px;
-    transition: all .25s ease;
+    gap: 10px;
+    transition: transform .25s ease, background .25s ease;
 }
 
 .skills-ul li::before {
-    content: "✔";
-    color: var(--rosa);
+    content: "✦";
+    color: var(--roxo);
 }
 
 .skills-ul li:hover {
-    background: rgba(255, 105, 180, 0.25);
+    background: rgba(255, 255, 255, 0.65);
     transform: translateX(6px);
 }
 
@@ -218,27 +222,28 @@ section {
    PROJETOS
 ========================== */
 .projects-card {
-    max-width: 500px;
+    max-width: 520px;
     margin: auto;
     border-radius: var(--radius);
     overflow: hidden;
+    backdrop-filter: var(--blur);
     box-shadow: var(--shadow-soft);
 }
 
 .projects-card ul {
-    background: #af84c4;
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 25px;
 }
 
 .projects-card li {
-    margin: 12px 0;
-    font-weight: bold;
-    transition: color .2s ease, transform .2s ease;
+    margin: 14px 0;
+    font-weight: 600;
+    transition: transform .2s ease, color .2s ease;
 }
 
 .projects-card li:hover {
-    color: var(--ciano);
-    transform: scale(1.05);
+    color: var(--roxo);
+    transform: translateX(6px);
     cursor: pointer;
 }
 
@@ -246,36 +251,31 @@ section {
    CONTATO
 ========================== */
 .contact {
-    background: var(--rosa-claro);
-    color: #010175;
+    background: linear-gradient(90deg, var(--rosa), var(--roxo));
+    color: #fff;
     border-radius: var(--radius);
-    padding: 12px 18px;
+    padding: 14px 22px;
     display: flex;
     align-items: center;
-    gap: 20px;
-    max-width: 600px;
-    margin: 12px auto;
-    font-weight: bold;
-    transition: all .3s ease;
+    gap: 18px;
+    max-width: 620px;
+    margin: 14px auto;
+    font-weight: 600;
     text-decoration: none;
+    box-shadow: var(--shadow-soft);
+    transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .contact:hover {
-    background: var(--ciano);
-    color: var(--rosa);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
 }
 
 .icones {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
 }
 
-/* ==========================
-   FOOTER
-========================== */
-footer p {
-    text-shadow: 2px 2px 5px var(--roxo);
-}
 
 /* ==========================
    RESPONSIVO
