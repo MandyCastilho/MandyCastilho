@@ -1,11 +1,11 @@
 function hamburg(){
     const navbar = document.querySelector(".dropdown")
-    navbar.computedStyleMap.transform = "translateY(0px)"
+    navbar.style.transform = "translateY(0px)"
 }
 
 function cancel(){
-    const navbar = document.querySelector(".cancel")
-    navbar.computedStyleMap.transform = "translateY(-500px)"
+    const navbar = document.querySelector(".dropdown")
+    navbar.style.transform = "translateY(-500px)"
 }
 
 const texts = [
@@ -42,7 +42,10 @@ function eraseText(){
     }
 }
 
-window.onload = typeWriter;
+window.onload = () => {
+    textElements.textContent = "";
+    typeWriter();
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Portfolio carregado com sucesso!");
