@@ -152,7 +152,7 @@ section{
 
 .content p{
     font-size: clamp(0.8rem, 0.5rem + 3vw, 1.1rem);
-    margin: 20px 0;
+    margin: 20px 0; 
 }
 
 .content p span{
