@@ -22,24 +22,27 @@ html{
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: black;
+    background-color: black; 
     overflow: hidden;
 }
 
-header{
+/* header{
     height: 15%;
-}
+} */
 
 main{
     height: 70%;
 }
 
-nav{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    display: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
 
 .logo{
@@ -56,15 +59,12 @@ nav{
     text-shadow: 0 0 10px #FE019A;
 }
 
-.hamburg,
-.cancel{
-    cursor: pointer;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    color: white;
-    display: none;
-    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-container .links a{
@@ -179,6 +179,7 @@ nav{
     width: 50%;
     height: 6vh;
     margin: 30px;
+    margin-left: 10px;
     background-color: #FF69B4;
     color: white;
     border: none;
@@ -202,13 +203,18 @@ nav{
     height: 80vh;
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 50px #FF69B4;
+    box-shadow: 0 0 50px #FF69B4; 
 }
 
-.main-container .image img{
+/* .main-container .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+} */
+
+#projetos{
+    padding: 4rem 2rem;
+    background-color: #FE019A;
 }
 
 .footer{
