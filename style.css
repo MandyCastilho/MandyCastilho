@@ -110,7 +110,7 @@ nav{
 }
 
  section{
-     width: 100%;
+    width: 100%;
     min-height: 90vh;
  }
 
@@ -157,6 +157,10 @@ nav{
 
 .content p span{
     color: #FF69B4;
+}
+
+.social-links a{
+    text-decoration: none;
 }
 
 .social-links i{
