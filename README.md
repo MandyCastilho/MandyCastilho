@@ -78,7 +78,7 @@
 💬 Fique à vontade para conversar sobre **projetos, oportunidades ou ideias**.  
 Sempre aberta a aprender, colaborar e evoluir ✨
 
-* **💼 LinkedIn:** [Amanda Ramos Castilho](https://www.linkedin.com/in/amanda-ramos-castilho-5ba928257/)
+* **💼 LinkedIn:** [Amanda Ramos Castilho](https://www.linkedin.com/in/amanda-ramos-castilho-5ba928257/) 
 * **📧 E-mail:** castilhoamandaramos@gmail.com
 
 
