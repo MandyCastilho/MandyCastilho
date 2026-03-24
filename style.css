@@ -237,6 +237,20 @@ h1 span{
     font-size: 2rem;
 }
 
+.projects h4{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--rosa-claro);
+}
+
+.projects p{
+    font-size: 1.1rem;
+    font-weight: 500;;
+    line-height: 1.5;
+    margin: 15px 0px;
+    color: white;
+}
+
 .projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -257,19 +271,6 @@ h1 span{
     border-color: var(--rosa-claro);
 }
 
-.projects h4{
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: var(--rosa-claro);
-}
-
-.projects p{
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 15px 0px;
-    color: white;
-}
-
 .projeto-link{
     display: inline-block;
     margin-top: 10px;
@@ -280,8 +281,9 @@ h1 span{
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .projeto-link:hover{
