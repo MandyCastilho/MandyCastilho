@@ -156,10 +156,6 @@ h1 span{
     color: #FF69B4;
 }
 
-h3{
-    color: white;
-}
-
 .content .typewriter{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 700;
@@ -235,6 +231,7 @@ h3{
 
 /* PROJETOS */
 #projetos h3{
+    color: white;
     text-align: center;
     margin-bottom: 40px;
     font-size: 2rem;
@@ -261,14 +258,42 @@ h3{
 }
 
 .projects h4{
+    font-size: 1.2rem;
     margin-bottom: 10px;
     color: var(--rosa-claro);
 }
 
 .projects p{
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.5;
+    margin: 15px 0px;
     color: white;
+}
+
+.projeto-link{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: #FF69B4;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.projeto-link:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+}
+
+.projeto-link:last-child{
+    background: transparent;
+    border: 1px solid #FF69B4;
+    color: #FF69B4;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.568);
 }
 
 .footer{
