@@ -6,6 +6,23 @@
     --ciano: #00E5FF;
 }
 
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+/* Parte que desliza */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #FF69B4, #C71585, #4B0082);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FF69B4;
+}
+
 html{
     width: 100%;
     height: 100%;
@@ -23,15 +40,15 @@ body{
     width: 100%;
     min-height: 100vh;
     background-color: black; 
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-/* header{
+header{
     height: 15%;
-} */
+} 
 
 main{
-    height: 70%;
+    min-height: 70vh;
 }
 
 .hamburg,
@@ -129,14 +146,18 @@ nav{
     box-shadow: 0 0 120px 50px black;
 }
 
-.content h1{
+ h1{
     font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
 }
 
-.content h1 span{
+h1 span{
     font-weight: 700;
     text-shadow: 0 0 10px #C71585;
     color: #FF69B4;
+}
+
+h3{
+    color: white;
 }
 
 .content .typewriter{
@@ -206,15 +227,48 @@ nav{
     box-shadow: 0 0 50px #FF69B4; 
 }
 
-/* .main-container .image img{
+.main-container .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-} */
+} 
 
-#projetos{
-    padding: 4rem 2rem;
-    background-color: #FE019A;
+/* PROJETOS */
+#projetos h3{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* CARDS */
+.projects div{
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: 1px solid #222;
+}
+
+.projects div:hover{
+    transform: translateY(-10px);
+    border-color: var(--rosa-claro);
+}
+
+.projects h4{
+    margin-bottom: 10px;
+    color: var(--rosa-claro);
+}
+
+.projects p{
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: white;
 }
 
 .footer{
