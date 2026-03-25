@@ -41,7 +41,7 @@ html{
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: black; 
+    background-color: black;
     overflow-x: hidden;
 }
 
@@ -149,16 +149,6 @@ nav{
     box-shadow: 0 0 120px 50px black;
 }
 
- h1{
-    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
-}
-
-h1 span{
-    font-weight: 700;
-    text-shadow: 0 0 10px #C71585;
-    color: #FF69B4;
-}
-
 .content .typewriter{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 700;
@@ -232,7 +222,28 @@ h1 span{
     object-fit: cover;
 } 
 
-/* PROJETOS */
+h1{
+    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+}
+
+h1 span{
+    font-weight: 700;
+    text-shadow: 0 0 10px #C71585;
+    color: #FF69B4;
+}
+
+h3{
+    color: #ff1493; 
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+
+     text-shadow:
+        0 0 2px #ff1493,
+        0 0 4px #ff1493,
+        0 0 8px rgba(255, 20, 147, 0.6); 
+}
+
  @keyframes glow{
     0%{
         text-shadow:
@@ -248,23 +259,11 @@ h1 span{
     }
 } 
 
-#projetos h3{
+h3{
     animation: glow 1.8s infinite alternate;
 }
 
-#projetos h3{
-    color: #ff1493; 
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 40px;
-
-     text-shadow:
-        0 0 2px #ff1493,
-        0 0 4px #ff1493,
-        0 0 8px rgba(255, 20, 147, 0.6); 
-}
-
-.projects h4{
+ h4{
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: var(--rosa-claro);
@@ -278,6 +277,63 @@ h1 span{
     color: white;
 }
 
+/* HABILIDADES */
+.skills {
+  color: white;
+  font-weight: 600;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+/* GRID */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.skills-box {
+  background: rgba(255, 105, 180, 0.08);
+  border: 1px solid rgba(255, 105, 180, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+/* HOVER SUAVE */
+.skills-box:hover {
+  transform: translateY(-5px);
+  border-color: #FF69B4;
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
+}
+
+/* LISTA */
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin: 10px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(0, 229, 255, 0.05);
+  transition: 0.2s;
+}
+
+.skills li:hover {
+  background: rgba(0, 229, 255, 0.1);
+}
+
+/* DESTAQUE */
+strong {
+  color: #00E5FF;
+}
+
+/* PROJETOS */
 .projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -330,7 +386,7 @@ h1 span{
 .footer{
     padding: 30px;
     color: white;
-    background-color: #FE019A;
+    background-color: #FF69B4;
     text-align: center;
     font-size: 20px;
     font-weight: 300;
