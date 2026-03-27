@@ -416,6 +416,10 @@ h3{
     margin-right: auto;
 }
 
+.contato-texto span {
+    color: var(--rosa-claro);
+}
+
 .social-links a:hover {
     transform: translateY(-8px) scale(1.1);
     border-color: var(--rosa-claro);
