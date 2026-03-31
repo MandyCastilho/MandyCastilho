@@ -1,3 +1,22 @@
+const btnTop = document.getElementById("btnTop");
+
+// mostrar botão quando descer a página
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        btnTop.classList.add("show");
+    } else {
+        btnTop.classList.remove("show");
+    }
+});
+
+// voltar suave pro topo
+btnTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
 // Menu
 function hamburg(){
     const navbar = document.querySelector(".dropdown")
