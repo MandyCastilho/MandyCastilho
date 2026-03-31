@@ -1,3 +1,4 @@
+// Botão para voltar ao início da tela 
 const btnTop = document.getElementById("btnTop");
 
 // mostrar botão quando descer a página
