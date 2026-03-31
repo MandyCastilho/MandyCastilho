@@ -53,17 +53,6 @@ main{
     min-height: 70vh;
 }
 
-.hamburg,
-.cancel{
-    cursor: pointer;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    color: white;
-    display: none;
-    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
-}
-
 .logo{
     color: white;
     position: absolute;
@@ -92,6 +81,17 @@ nav{
     margin: 0 20px;
     text-decoration: none;
     transition: 0.3s linear;
+}
+
+.hamburg,
+.cancel{
+    display: none !important;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
 
 .nav-container .links a:hover{
@@ -126,7 +126,7 @@ nav{
 
 .dropdown .links a:hover{
     background-color: #FF69B4;
-}
+} 
 
  section{
     width: 100%;
@@ -443,3 +443,21 @@ h3{
     font-weight: 300;
 }
 
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .hamburg {
+        display: block !important; 
+    }
+
+    .nav-container {
+        display: none; /* esconde menu normal */
+    }
+
+}
