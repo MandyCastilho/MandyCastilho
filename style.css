@@ -343,10 +343,12 @@ h3{
 }
 
 /* PROJETOS */
-.projects{
+.projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
 }
 
 /* CARDS */
@@ -487,6 +489,10 @@ h3{
 
     .nav-container {
         display: none; /* esconde menu normal */
+    }
+
+     .projects {
+        grid-template-columns: 1fr;
     }
 
 }
