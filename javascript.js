@@ -29,6 +29,12 @@ function cancel(){
     navbar.style.transform = "translateY(-500px)"
 }
 
+document.querySelectorAll(".dropdown a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    });
+});
+
 // Texto
 const texts = [
     "Desenvolvedora",
